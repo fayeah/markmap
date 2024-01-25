@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "markmap",
+    "version": "1.0.0",
+    "description": "Browser extension that generate map for markdown format",
+    "host_permissions": [],
+    "background": {
+      "service_worker": "service-worker.js"
+    },
+    "permissions": [
+      "sidePanel",
+      "tabs",
+      "activeTab",
+      "storage"
+    ],
+    "content_scripts": [
+      {
+        "js": ["content.js"],
+        "matches": [
+          "https://github.com/*"
+        ]
+      }
+    ],
+    "side_panel": {
+      "default_path": "index.html"
+    },
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "16": "logo-16x16.png",
+        "48": "logo-48x48.png",
+        "192": "logo-192x192.png"
+      },
+      "default_title": "Click to open panel"
+    }
+  }
