@@ -1,44 +1,11 @@
 # markmap
 
-This template should help get you started developing with Vue 3 in Vite.
+This tool is to generate mindmap based on readme formatted documents.
 
 ![markmap](https://github.com/fayeah/markmap/blob/main/markmap.gif)
 
-## Recommended IDE Setup
+## run it locally
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- build with `npm i` and `npm run build`
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
- "background": {
-      "service_worker": "service-worker.js"
-    },
-
-    "content_scripts": [
-      {
-        "js": ["content.js"],
-        "matches": [
-          "https://github.com/*"
-        ]
-      }
-    ],
+- then try it on chrome with archives of dist folder
